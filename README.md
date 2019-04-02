@@ -16,6 +16,12 @@ Open up app/routes/index.js, go to the `this.transitionTo('foo');`
 statement and ask for completions on `'fo'` or `'foo'`.  This should yield
 a few options like `'foo.baz'` and `'foo.baz.baloo'`.
 
+### Model completion in findRecord
+
+Open up app/routes/index.js, uncomment one of the lines containing
+`this.store.findRecord(...);`.  Completions of the string supplied to
+findRecord should include glass, bottle, barrel, crate and truck.
+
 ## Testing the running app
 
     npm install -g ember-cli
