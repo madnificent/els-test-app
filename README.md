@@ -2,59 +2,23 @@
 
 An app to quickly test out some ember-language-server features to ensure we're on the right track.
 
-Open up app/routes/index.js, go to the this.transitionTo('foo');
-statement and ask for completions on 'fo' or 'foo'.  This should yield
-a few options like 'foo.baz' and 'foo.baz.baloo'.
-
-## Prerequisites
-
-You will need the following things properly installed on your computer.
-
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with npm)
-* [Ember CLI](https://ember-cli.com/)
-* [Google Chrome](https://google.com/chrome/)
-
 ## Installation
 
 * `git clone <repository-url>` this repository
 * `cd els-test-app`
 * `npm install`
 
-## Running / Development
+## Tests to execute
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
+### Route completion in transitionTo
 
-### Code Generators
+Open up app/routes/index.js, go to the `this.transitionTo('foo');`
+statement and ask for completions on `'fo'` or `'foo'`.  This should yield
+a few options like `'foo.baz'` and `'foo.baz.baloo'`.
 
-Make use of the many generators for code, try `ember help generate` for more details
+## Testing the running app
 
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Linting
-
-* `npm run lint:hbs`
-* `npm run lint:js`
-* `npm run lint:js -- --fix`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+    npm install -g ember-cli
+    ember serve
+    
+and visit http://localhost:4200 . This should redirect you to http://localhost:4200/foo 
