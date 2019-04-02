@@ -22,6 +22,10 @@ Open up app/routes/index.js, uncomment one of the lines containing
 `this.store.findRecord(...);`.  Completions of the string supplied to
 findRecord should include glass, bottle, barrel, crate and truck.
 
+### Goto definition from template to component
+
+Open up `app/templates/foo.hbs` and ask to go to the definition of `{{els-tryout}}`.
+
 ## Testing the running app
 
     npm install -g ember-cli
