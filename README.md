@@ -1,7 +1,10 @@
 # els-test-app
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+An app to quickly test out some ember-language-server features to ensure we're on the right track.
+
+Open up app/routes/index.js, go to the this.transitionTo('foo');
+statement and ask for completions on 'fo' or 'foo'.  This should yield
+a few options like 'foo.baz' and 'foo.baz.baloo'.
 
 ## Prerequisites
 
